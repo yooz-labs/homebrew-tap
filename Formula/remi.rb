@@ -25,7 +25,7 @@ class Remi < Formula
   end
 
   def install
-    bin.install "package/bin/remi"
+    bin.install "bin/remi"
   end
 
   test do
