@@ -1,9 +1,3 @@
-==> Fetching SHA-256 hashes from npm registry...
-  darwin-arm64: 2f49888b3febcef0e9a6df8c48a5ac7f9863c670da9511d873a545fc73557321
-  darwin-x64: a242dd8d3f7e588351daa5e67b6e2159378359cd4a908846381fb6026aa6c10f
-  linux-arm64: b4f5cf29b9232587603df7f88443ba4904d53190198a4f570d1f8893c254fe43
-  linux-x64: 667bbf8eea2b2e25c6e2be3079ba636ee4b7c57dae5c4c9acf0e350313663fd3
-==> Generated formula for remi 0.2.1
 class Remi < Formula
   desc "Remote monitor for Claude Code CLI sessions"
   homepage "https://github.com/yooz-labs/remi"
