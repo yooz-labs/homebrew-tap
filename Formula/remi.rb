@@ -1,26 +1,32 @@
+==> Fetching SHA-256 hashes from npm registry...
+  darwin-arm64: 2f49888b3febcef0e9a6df8c48a5ac7f9863c670da9511d873a545fc73557321
+  darwin-x64: a242dd8d3f7e588351daa5e67b6e2159378359cd4a908846381fb6026aa6c10f
+  linux-arm64: b4f5cf29b9232587603df7f88443ba4904d53190198a4f570d1f8893c254fe43
+  linux-x64: 667bbf8eea2b2e25c6e2be3079ba636ee4b7c57dae5c4c9acf0e350313663fd3
+==> Generated formula for remi 0.2.1
 class Remi < Formula
   desc "Remote monitor for Claude Code CLI sessions"
   homepage "https://github.com/yooz-labs/remi"
-  version "0.1.0"
+  version "0.2.1"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://registry.npmjs.org/@yooz-labs/remi-darwin-arm64/-/remi-darwin-arm64-0.1.0.tgz"
-      sha256 "a6ca69e9bc370c4a764231c396c55ce360056b6a2a9850a92ec9628a662dfd8d"
+      url "https://registry.npmjs.org/@yooz-labs/remi-darwin-arm64/-/remi-darwin-arm64-0.2.1.tgz"
+      sha256 "2f49888b3febcef0e9a6df8c48a5ac7f9863c670da9511d873a545fc73557321"
     else
-      url "https://registry.npmjs.org/@yooz-labs/remi-darwin-x64/-/remi-darwin-x64-0.1.0.tgz"
-      sha256 "a89db326d0c073eedf4595d6e3a852cab73ff7cc0314d1b08afdecbaf39bd0de"
+      url "https://registry.npmjs.org/@yooz-labs/remi-darwin-x64/-/remi-darwin-x64-0.2.1.tgz"
+      sha256 "a242dd8d3f7e588351daa5e67b6e2159378359cd4a908846381fb6026aa6c10f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://registry.npmjs.org/@yooz-labs/remi-linux-arm64/-/remi-linux-arm64-0.1.0.tgz"
-      sha256 "c62934aa34393fff546e9a683e5300b145b508099ab9f433194293c0a281497d"
+      url "https://registry.npmjs.org/@yooz-labs/remi-linux-arm64/-/remi-linux-arm64-0.2.1.tgz"
+      sha256 "b4f5cf29b9232587603df7f88443ba4904d53190198a4f570d1f8893c254fe43"
     else
-      url "https://registry.npmjs.org/@yooz-labs/remi-linux-x64/-/remi-linux-x64-0.1.0.tgz"
-      sha256 "bb7920a536fb88f9fa5e00a4088ad875bc2e4ee08f28b064da37fcc9718554a7"
+      url "https://registry.npmjs.org/@yooz-labs/remi-linux-x64/-/remi-linux-x64-0.2.1.tgz"
+      sha256 "667bbf8eea2b2e25c6e2be3079ba636ee4b7c57dae5c4c9acf0e350313663fd3"
     end
   end
 
@@ -32,3 +38,4 @@ class Remi < Formula
     assert_match "remi #{version}", shell_output("#{bin}/remi --version")
   end
 end
+
