@@ -1,26 +1,26 @@
 class Remi < Formula
   desc "Remote monitor for Claude Code CLI sessions"
   homepage "https://github.com/yooz-labs/remi"
-  version "0.4.13"
+  version "0.4.14"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://registry.npmjs.org/@yooz-labs/remi-darwin-arm64/-/remi-darwin-arm64-0.4.13.tgz"
-      sha256 "dcfd2ec49c456227c049e4b46d8d6a4792b72c3e83567a697f9204ae9bf3b929"
+      url "https://registry.npmjs.org/@yooz-labs/remi-darwin-arm64/-/remi-darwin-arm64-0.4.14.tgz"
+      sha256 "0d5da92ec647e1bcef10227d23cd48675323067d068f117e31d139e2fd0288a0"
     else
-      url "https://registry.npmjs.org/@yooz-labs/remi-darwin-x64/-/remi-darwin-x64-0.4.13.tgz"
-      sha256 "99bf9c110f5e71440ad685998e681c33b44976c6070d710f5b43db47494ac170"
+      url "https://registry.npmjs.org/@yooz-labs/remi-darwin-x64/-/remi-darwin-x64-0.4.14.tgz"
+      sha256 "d29bae911643aa261368991239ecdb797142fa505244c1d4dbf7dfa0978e73e2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://registry.npmjs.org/@yooz-labs/remi-linux-arm64/-/remi-linux-arm64-0.4.13.tgz"
-      sha256 "e117e93e203bd94fdb3e7c12f152a54eb6eb55d6282dbf602f1f66c52c005e8b"
+      url "https://registry.npmjs.org/@yooz-labs/remi-linux-arm64/-/remi-linux-arm64-0.4.14.tgz"
+      sha256 "119249d8f742543c36b2493b597e27d42060a59cdeaea9735e80491020a62d2e"
     else
-      url "https://registry.npmjs.org/@yooz-labs/remi-linux-x64/-/remi-linux-x64-0.4.13.tgz"
-      sha256 "30f35506a4817bc600f1bcdb7ab625ac77c89f6b93b564a28aff05a3545424b4"
+      url "https://registry.npmjs.org/@yooz-labs/remi-linux-x64/-/remi-linux-x64-0.4.14.tgz"
+      sha256 "0ee45d2b554f021e4f84df4ca36a23b77aa0a90487cbaae1a15d7b46975d9475"
     end
   end
 
